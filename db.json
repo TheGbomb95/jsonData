@@ -39,14 +39,6 @@
             "mmhg": 34,
             "spo2": "67%",
             "bpm": 104
-        },
-        {
-            "name": "Patient 6",
-            "mrn": 5471440,
-            "location": "5th Floor",
-            "mmhg": 54,
-            "spo2": "99%",
-            "bpm": 134
         }
     ]
 }
