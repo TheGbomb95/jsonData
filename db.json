@@ -1,6 +1,6 @@
 {
     "patients": [
-        {
+        { 
             "name": "Patient 1",
             "mrn": 1482928,
             "location": "Orthopedics",
@@ -10,6 +10,12 @@
             "hr": 60,
             "boc": "92%",
             "resp": "14"
+        },
+        "mrn": {
+            "12345":{
+                "name": "graham",
+                "age" : 21
+                }
         },
         {
             "name": "Patient 2",
