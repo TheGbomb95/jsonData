@@ -11,12 +11,6 @@
             "boc": "92%",
             "resp": "14"
         },
-        "mrn" : {
-            "12345":{
-                "name": "graham",
-                "age" : 21
-                }
-        },
         {
             "name": "Patient 2",
             "mrn": 2382928,
