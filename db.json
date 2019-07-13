@@ -1,49 +1,53 @@
-[
-  {
-    'repeat(5, 10)': {
-      _id: '{{objectId()}}',
-      index: '{{index()}}',
-      guid: '{{guid()}}',
-      isActive: '{{bool()}}',
-      balance: '{{floating(1000, 4000, 2, "$0,0.00")}}',
-      picture: 'http://placehold.it/32x32',
-      age: '{{integer(20, 40)}}',
-      eyeColor: '{{random("blue", "brown", "green")}}',
-      name: {
-        first: '{{firstName()}}',
-        last: '{{surname()}}'
-      },
-      company: '{{company().toUpperCase()}}',
-      email(tags) {
-        return `${this.name.first}.${this.name.last}@${this.company}${tags.domainZone()}`.toLowerCase();
-      },
-      phone: '+1 {{phone()}}',
-      address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
-      about: '{{lorem(1, "paragraphs")}}',
-      registered: '{{moment(this.date(new Date(2014, 0, 1), new Date())).format("LLLL")}}',
-      latitude: '{{floating(-90.000001, 90)}}',
-      longitude: '{{floating(-180.000001, 180)}}',
-      tags: [
+{
+    "patients": [
+        { 
+            "name": "Patient 1",
+            "mrn": 1482928,
+            "location": "Orthopedics",
+            "press": 22,
+            "bpm": 60,
+            "temp": 98.6,
+            "hr": 60,
+            "boc": "92%",
+            "resp": "14"
+        },
+        "mrn" : {
+            "12345":{
+                "name": "graham",
+                "age" : 21
+                }
+        },
         {
-          'repeat(5)': '{{lorem(1, "words")}}'
-        }
-      ],
-      range: range(10),
-      friends: [
+            "name": "Patient 2",
+            "mrn": 2382928,
+            "location": "6th Floor",
+            "mmhg": 32,
+            "spo2": "92%",
+            "bpm": 92
+        },
         {
-          'repeat(3)': {
-            id: '{{index()}}',
-            name: '{{firstName()}} {{surname()}}'
-          }
+            "name": "Patient 3",
+            "mrn": 4282977,
+            "location": "Trauma",
+            "mmhg": 11,
+            "spo2": "72%",
+            "bpm": 79
+        },
+        {
+            "name": "Patient 4",
+            "mrn": 9382905,
+            "location": "Emergency Dept.",
+            "mmhg": 120,
+            "spo2": "88%",
+            "bpm": 88
+        },
+        {
+            "name": "Patient 5",
+            "mrn": 2482974,
+            "location": "Orthopedics",
+            "mmhg": 34,
+            "spo2": "67%",
+            "bpm": 104
         }
-      ],
-      greeting(tags) {
-        return `Hello, ${this.name.first}! You have ${tags.integer(5, 10)} unread messages.`;
-      },
-      favoriteFruit(tags) {
-        const fruits = ['apple', 'banana', 'strawberry'];
-        return fruits[tags.integer(0, fruits.length - 1)];
-      }
-    }
-  }
-]
+    ]
+}
