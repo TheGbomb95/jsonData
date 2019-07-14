@@ -40,5 +40,39 @@
             "spo2": "67%",
             "bpm": 104
         }
+    ],
+    "mrn": [
+        {
+            "1482928":{
+                "name": "Patient 1",
+                "location": "Orthopedics",
+                "press": 22,
+                "bpm": 60,
+                "temp": 98.6,
+                "hr": 60,
+                "boc": "92%",
+                "resp": "14"
+            },
+            "2382928":{
+                "name": "Patient 1",
+                "location": "Orthopedics",
+                "press": 22,
+                "bpm": 60,
+                "temp": 98.6,
+                "hr": 60,
+                "boc": "92%",
+                "resp": "14"
+            },
+            "4282977":{
+                "name": "Patient 1",
+                "location": "Orthopedics",
+                "press": 22,
+                "bpm": 60,
+                "temp": 98.6,
+                "hr": 60,
+                "boc": "92%",
+                "resp": "14"
+            }
+        }
     ]
 }
