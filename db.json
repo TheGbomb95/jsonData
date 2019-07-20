@@ -44,6 +44,10 @@
     "mrn": [
         {
             "1482928":{
+                "green": 7263,
+                "ir": 139691,
+                "red": 107096,
+                "time": 7070970,
                 "name": "Patient 1",
                 "location": "Orthopedics",
                 "press": 22,
